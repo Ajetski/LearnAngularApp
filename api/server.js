@@ -3,8 +3,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const postRouter = require('./todo-router');
-
 const PORT = 5000;
 
 // Parse request body as JSON data
@@ -12,8 +10,8 @@ app.use(bodyParser.json());
 // use cors
 app.use(cors());
 
-// Add router for requests going to /post/*
-app.use('/to-do', postRouter);
+// Add router for requests going to /to-do/*
+app.use('/to-do', require('./todo-router'));
 
 // test routes
 app.get('/hello-world', (_req, res) => {
