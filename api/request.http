@@ -12,13 +12,8 @@ PUT http://localhost:5000/to-do
 Content-Type: application/json
 
 {
-    "todo": "Make a pizza12"
+    "todo": "Make a pizza"
 }
 
 ### Delete/filter todos
-DELETE http://localhost:5000/to-do
-Content-Type: application/json
-
-{
-    "todo": "Make a pizza"
-}
+DELETE http://localhost:5000/to-do/"Make a pizza"
