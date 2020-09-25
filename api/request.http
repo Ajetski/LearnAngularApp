@@ -1,0 +1,24 @@
+### Hello World Test
+GET http://localhost:5000/hello-world
+
+### Error test
+GET http://localhost:5000/error-test
+
+### Get todos
+GET http://localhost:5000/to-do
+
+### Create todo
+PUT http://localhost:5000/to-do
+Content-Type: application/json
+
+{
+    "todo": "Make a pizza12"
+}
+
+### Delete/filter todos
+DELETE http://localhost:5000/to-do
+Content-Type: application/json
+
+{
+    "todo": "Make a pizza"
+}
