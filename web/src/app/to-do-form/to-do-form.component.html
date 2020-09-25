@@ -1,0 +1,12 @@
+<form>
+    <div>
+        <label for="todo-input">Todo: </label>
+        <input type="text" name="todo-input" id="todo-input" #todoInput>
+    </div>
+    <br>
+    <div>
+        <button type="submit" (click)="add(todoInput.value); todoInput.value = '';" appBgBlue>Add</button>
+        <button type="submit" (click)="delete(todoInput.value); todoInput.value = '';" appBgBlue>Remove</button>
+        <button type="submit" (click)="todoService.getToDo();" appBgBlue>Update</button>
+    </div>
+</form>

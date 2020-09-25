@@ -1,0 +1,3 @@
+<p *ngIf="todoService.todoArr.length === 0">There are no to-do's. Take the day off!</p>
+<p *ngFor="let todo of todoService.todoArr">{{ todo }}</p>
+<p>{{ todoService.lastUpdated | date:'long'}}</p>
