@@ -5,8 +5,16 @@
     </div>
     <br>
     <div>
-        <button type="submit" (click)="add(todoInput.value); todoInput.value = '';" appBgBlue>Add</button>
-        <button type="submit" (click)="delete(todoInput.value); todoInput.value = '';" appBgBlue>Remove</button>
-        <button type="submit" (click)="todoService.getToDo();" appBgBlue>Update</button>
+        <button type="submit"
+            (click)="todoService.addToDo(todoInput.value); todoInput.value = '';"
+            appBgBlue>Add</button>
+            
+        <button type="submit"
+            (click)="todoService.deleteToDo(todoInput.value); todoInput.value = '';"
+            appBgBlue>Remove</button>
+
+        <button type="submit"
+            (click)="todoService.getToDo();"
+            appBgBlue>Update</button>
     </div>
 </form>
