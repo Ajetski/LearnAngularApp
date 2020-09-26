@@ -8,7 +8,7 @@ import { ToDoService } from '../services/to-do.service';
 })
 export class ToDoListComponent implements OnInit {
   
-  constructor(public todoService:ToDoService) { }
+  constructor(public todoService: ToDoService) { }
 
   ngOnInit(): void {
     this.todoService.getToDo();
