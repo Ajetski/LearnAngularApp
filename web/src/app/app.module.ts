@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { ToDoFormComponent } from './to-do-form/to-do-form.component';
 import { BgBlueDirective } from './directives/bg-blue.directive';
+import { BoxControlPanelComponent } from './box-control-panel/box-control-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToDoListComponent,
     ToDoFormComponent,
-    BgBlueDirective
+    BgBlueDirective,
+    BoxControlPanelComponent
   ],
   imports: [
     BrowserModule,
