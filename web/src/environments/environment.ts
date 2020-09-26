@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiBase: 'http://localhost:5000'
+  apiBase: 'http://localhost:5000',
+  boxApiBase: 'https://66.30.105.192:55000/'
 };
 
 /*
